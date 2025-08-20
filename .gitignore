@@ -1,0 +1,21 @@
+# Editor Configurations
+.vscode/
+
+# Original ROM files
+twewy_*/
+*.nds
+*bios.bin
+
+# Build Output
+build/
+*.sav
+*.xMAP
+
+# Tools
+/m2ctx
+/objdiff*
+/dsd
+/dsd.exe
+build.ninja
+.ninja_*
+/wibo

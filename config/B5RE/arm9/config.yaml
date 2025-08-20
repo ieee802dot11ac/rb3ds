@@ -1,0 +1,26 @@
+rom_config: '../../../extract/B5RE/config.yaml'
+build_path: '../../../build/B5RE'
+delinks_path: '../../../build/B5RE/delinks'
+main_module:
+  name: main
+  object: '../../../build/B5RE/build/arm9.bin'
+  hash: a12fb9bdc978463b
+  delinks: delinks.txt
+  symbols: symbols.txt
+  relocations: relocs.txt
+autoloads:
+- kind: Itcm
+  name: itcm
+  object: '../../../build/B5RE/build/itcm.bin'
+  hash: '7ec9f3e54d5d77d0'
+  delinks: itcm/delinks.txt
+  symbols: itcm/symbols.txt
+  relocations: itcm/relocs.txt
+- kind: Dtcm
+  name: dtcm
+  object: '../../../build/B5RE/build/dtcm.bin'
+  hash: b8f158f4a881c49c
+  delinks: dtcm/delinks.txt
+  symbols: dtcm/symbols.txt
+  relocations: dtcm/relocs.txt
+overlays: []
