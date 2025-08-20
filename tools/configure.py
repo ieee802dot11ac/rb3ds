@@ -127,7 +127,6 @@ arm7_bios_path = root_path / "arm7_bios.bin"
 config_path = root_path / "config"
 build_path = root_path / "build"
 src_path = root_path / "src"
-libs_path = root_path / "libs"
 extract_path = root_path / "extract"
 tools_path = root_path / "tools"
 mwcc_root = args.compiler or tools_path / "mwccarm"
@@ -135,13 +134,7 @@ mwcc_path = mwcc_root / MWCC_VERSION
 
 
 # Includes
-includes = [root_path / "include"]
-for root, dirs, _ in os.walk(libs_path):
-    for dir in dirs:
-        if dir == "include":
-            includes.append(Path(root) / dir)
-CC_INCLUDES = " ".join(f"-i {include}" for include in includes)
-
+CC_INCLUDES = f"-i {src_path}"
 
 # Platform info
 platform = get_platform()
@@ -210,7 +203,7 @@ class Project:
 
     def source_object_files(self) -> list[str]:
         files: list[str] = []
-        for source_file in get_c_cpp_files([src_path, libs_path]):
+        for source_file in get_c_cpp_files([src_path]):
             src_obj_path = self.game_build / source_file
             files.append(str(src_obj_path.with_suffix(".o")))
         return files
@@ -557,7 +550,7 @@ def add_mwld_and_rom_builds(n: ninja_syntax.Writer, project: Project):
 
 
 def add_mwcc_builds(n: ninja_syntax.Writer, project: Project, mwcc_implicit: list[str]):
-    for source_file in get_c_cpp_files([src_path, libs_path]):
+    for source_file in get_c_cpp_files([src_path]):
         src_obj_path = project.game_build / source_file
         cc_flags: list[str] = []
         if is_cpp(source_file):

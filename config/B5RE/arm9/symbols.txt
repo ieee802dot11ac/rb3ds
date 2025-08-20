@@ -279,7 +279,7 @@ func_020091d8 kind:function(arm,size=0xc) addr:0x020091d8
 func_020091e4 kind:function(arm,size=0x4) addr:0x020091e4
 func_020091e8 kind:function(arm,size=0x1c) addr:0x020091e8
 func_02009204 kind:function(arm,size=0x14) addr:0x02009204
-func_02009218 kind:function(arm,size=0xc) addr:0x02009218
+_ZNKSt9bad_alloc4whatEv kind:function(arm,size=0xc) addr:0x02009218
 func_02009224 kind:function(arm,size=0x10) addr:0x02009224
 func_02009234 kind:function(arm,size=0xac) addr:0x02009234
 func_020092e0 kind:function(arm,size=0x14) addr:0x020092e0
@@ -516,7 +516,7 @@ func_0201a164 kind:function(arm,size=0x60) addr:0x0201a164
 func_0201a1c4 kind:function(arm,size=0x178) addr:0x0201a1c4
 func_0201a33c kind:function(arm,size=0x14) addr:0x0201a33c
 func_0201a350 kind:function(arm,size=0x1c) addr:0x0201a350
-func_0201a36c kind:function(arm,size=0x38) addr:0x0201a36c
+_ZN5gfx3d10RenderableC1Ev kind:function(arm,size=0x38) addr:0x0201a36c
 func_0201a3a4 kind:function(arm,size=0x44) addr:0x0201a3a4
 func_0201a3e8 kind:function(arm,size=0x4c) addr:0x0201a3e8
 func_0201a434 kind:function(arm,size=0x44) addr:0x0201a434
@@ -2469,7 +2469,7 @@ func_0205d398 kind:function(arm,size=0x38) addr:0x0205d398
 func_0205d3d0 kind:function(arm,size=0x60) addr:0x0205d3d0
 func_0205d430 kind:function(arm,size=0xf8) addr:0x0205d430
 func_0205d528 kind:function(arm,size=0xf0) addr:0x0205d528
-func_0205d618 kind:function(arm,size=0x48) addr:0x0205d618
+_ZN5gfx3d5ModelC1Ev kind:function(arm,size=0x48) addr:0x0205d618
 func_0205d660 kind:function(arm,size=0x58) addr:0x0205d660
 func_0205d6b8 kind:function(arm,size=0x74) addr:0x0205d6b8
 func_0205d72c kind:function(arm,size=0x7c) addr:0x0205d72c
@@ -7958,10 +7958,11 @@ data_02134ea0 kind:data(any) addr:0x02134ea0
 data_02134eac kind:data(any) addr:0x02134eac
 data_02134eb8 kind:data(any) addr:0x02134eb8
 data_02134ec8 kind:data(any) addr:0x02134ec8
-data_02134ee0 kind:data(any) addr:0x02134ee0
+_ZTVSt9bad_alloc kind:data(any) addr:0x02134ee0
 data_02134eec kind:data(any) addr:0x02134eec
 data_02134f04 kind:data(any) addr:0x02134f04
 data_02134f20 kind:data(any) addr:0x02134f20
+_ZTVN5gfx3d14DynamicPaletteE kind:data(any) addr:0x02134f44
 data_02134f58 kind:data(any) addr:0x02134f58
 data_02134f78 kind:data(any) addr:0x02134f78
 data_02134f98 kind:data(any) addr:0x02134f98
@@ -7970,6 +7971,7 @@ data_02134fdc kind:data(any) addr:0x02134fdc
 data_02135008 kind:data(any) addr:0x02135008
 data_02135010 kind:data(any) addr:0x02135010
 data_0213501c kind:data(any) addr:0x0213501c
+_ZTV14BGVertRenderer kind:data(any) addr:0x02135038
 data_02135048 kind:data(any) addr:0x02135048
 data_021350b4 kind:data(any) addr:0x021350b4
 data_021350c0 kind:data(any) addr:0x021350c0
@@ -7986,6 +7988,8 @@ data_021353ec kind:data(any) addr:0x021353ec
 data_02135400 kind:data(any) addr:0x02135400
 data_02135418 kind:data(any) addr:0x02135418
 data_02135434 kind:data(any) addr:0x02135434
+_ZTVN5gfx3d14JointAnimationE kind:data(any) addr:0x02135458
+_ZTVN5gfx3d9AnimationE kind:data(any) addr:0x02135478
 data_0213554c kind:data(any) addr:0x0213554c
 data_02135558 kind:data(any) addr:0x02135558
 data_0213556c kind:data(any) addr:0x0213556c
@@ -8006,7 +8010,7 @@ data_0213572c kind:data(any) addr:0x0213572c
 data_02135738 kind:data(any) addr:0x02135738
 data_0213574c kind:data(any) addr:0x0213574c
 data_02135758 kind:data(any) addr:0x02135758
-data_02135798 kind:data(any) addr:0x02135798
+_ZTVN5gfx3d10RenderableE kind:data(any) addr:0x02135798
 data_021357b0 kind:data(any) addr:0x021357b0
 data_021357b8 kind:data(any) addr:0x021357b8
 data_021357c0 kind:data(any) addr:0x021357c0
