@@ -53,12 +53,12 @@ args = parser.parse_args()
 DSD_VERSION = "v0.10.2"
 WIBO_VERSION = "0.7.0"
 OBJDIFF_VERSION = "v3.0.0"
-MWCC_VERSION = "2.0/sp1p5"
+MWCC_VERSION = "2.0/sp2p2"
 DECOMP_ME_COMPILER = "mwcc_30_131"
 
 CC_FLAGS = " ".join(
     [
-        "-O4,p",  # Optimize maximally for performance
+        "-O4",
         "-enum int",  # Use int-sized enums
         "-char signed",  # Char type is signed
         "-str reuse",  # Equivalent strings are the same objects
@@ -68,7 +68,7 @@ CC_FLAGS = " ".join(
         "-inline noauto",  # Inline only functions marked with 'inline'
         "-lang=c99",  # Set language to C99
         "-Cpp_exceptions off",  # Disable C++ exceptions
-        "-RTTI off",  # Disable runtime type information
+        "-RTTI on",  # Disable runtime type information
         "-interworking",  # Enable ARM/Thumb interworking
         "-w off",  # Disable warnings
         "-sym on",  # Debug info, including line numbers
